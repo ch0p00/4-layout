@@ -143,10 +143,10 @@ header {
 }
 /* Main content */
 main{
-  margin-top: 110px;
+  margin-top: 100px;
 }
 .content-form {
-  height: 650px;
+  height: 660px;
   background-color: #f7f7f7;
   .content-form__container {
     height: 100%;
@@ -155,8 +155,11 @@ main{
     .content-form__text {
       width: 45%;
       text-align: center;
+      margin-top: 70px;
+      margin-left: 30px;
       h1 {
-        font-size: 32px;
+        font-weight: 600;
+        font-size: 33px;
         word-spacing: 3px;
         padding-top: 38px;
         margin: 30px 0;
@@ -178,6 +181,7 @@ main{
 
       .content-form__text {
         width: 80%;
+        margin: 0;
       }
     }
   }
