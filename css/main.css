@@ -146,9 +146,17 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+@media (max-width: 600px) {
+  .header__container.open {
+    height: 350px;
+  }
+}
 @media (max-width: 340px) {
   .menu {
     left: 30%;
+  }
+  .header__container.open {
+    height: 320px;
   }
 }
 /*# sourceMappingURL=main.css.map */
