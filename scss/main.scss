@@ -10,6 +10,19 @@
 html, body {
   height: 100%;
 }
+.wrapper {/* General Page style-rules */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+/* Header and footer are always fixed */
+html, body {
+  height: 100%;
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -26,6 +39,8 @@ main {
 /* Header */
 header {
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
 }
 .container {
   max-width: 1220px;
@@ -42,13 +57,10 @@ header {
   width: 80px;
   height: auto;
 }
-/* Header menu */
-/*---------- Menu -----------------*/
 .menu {
   height: 100%;
   width: 713px;
   display: flex;
-  list-style: none;
   align-items: center;
   li {
     box-sizing: border-box;
@@ -71,12 +83,12 @@ header {
   width: 140px;
   border-radius: 40px;
   padding: 8px;
-a {
-  color: white;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
+  a {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 }
 .burger-menu {
   display: none;
@@ -91,16 +103,18 @@ a {
   margin: 5px;
   border-radius: 5px;
 }
+/* Adaptive menu*/
 @media (max-width: 820px) {
   .header__container.open {
-    height: 430px;
+    height: 400px;
   }
   .menu {
     display: none;
     position: absolute;
     width: fit-content;
+    height: fit-content;
     align-self: center;
-    top: 100px;
+    top: 90px;
     left: 40%;
   }
   .menu a {
@@ -132,7 +146,7 @@ a {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 340px) {
   .menu {
     left: 30%;
   }
