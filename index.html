@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
+    <header class="open">
         <div class="container header__container">
         <div class="header__logo">
             <a href="#">
@@ -27,7 +27,7 @@
                 <li class="menu__item"><a href="#">Відгуки про курс</a></li>
                 <li class="menu__item"><a href="#">Відео</a></li>
                 <li class="menu__item"><a href="#">Ментори</a></li>
-                <li class="menu__item" id="menu__apply"><a href="#">Подати заявку</a></li>
+                <li class="menu__item" id="menu__apply"><a href="#content-form__form">Подати заявку</a></li>
             </ul>
         </nav>
         </div>
@@ -39,8 +39,25 @@
                     <h1>Курси програмування у Луцьку</h1>
                     <p>Сфера ІТ розвивається максимально швидкою Зараз дуже популярно здобувати освіту, що пов'язана з ІТ. Існує лише однапроблема - брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. ІТ школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати ІТ спеціалістом. Чекаємо вас на наших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня</p>
                 </div>
-                <div class="content-form__form">
-
+                <div id="content-form__form">
+                    <h2>Зареєструватися на курси</h2>
+                    <form name="regestration" id="form">
+                        <label for="firstname">Ім'я <img alt="required" src="img/icons/required.png"></label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Ім'я" required/>
+                        <label for="lastname">Прізвище <img alt="required" src="img/icons/required.png"></label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Прізвище" required/>
+                        <label for="interest">Мене більше цікавить <img alt="required" src="img/icons/required.png"></label>
+                        <input type="text" name="interest" id="interest" placeholder="developer or QA" required/>
+                        <label for="phone">Номер телефону <img alt="required" src="img/icons/required.png"></label>
+                        <input type="text" name="phone" id="phone" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ" required/>
+                        <label for="email">Email <img alt="required" src="img/icons/required.png"></label>
+                        <input type="email" name="email" id="email" placeholder="Email" required/>
+                        <div id="policy">
+                            <input type="checkbox" name="policy" class="policy" value="agree" required title="<<<"/>
+                            <label for="policy">Я погоджуюсь з <a href="#">Політикою Конфіденційності</a> <img alt="required" src="img/icons/required.png"></label>
+                        </div>
+                        <button type="submit" class="submit">Зареєструватися зараз</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -48,5 +65,8 @@
 
 </div>
 <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
 </body>
 </html>
