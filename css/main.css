@@ -336,7 +336,7 @@ main * {
   height: fit-content;
   background-color: #ffffff;
   text-align: center;
-  padding-top: 65px;
+  padding: 65px 0;
 }
 .course h2 {
   font-size: 34px;
@@ -402,5 +402,53 @@ main * {
 
 .slick-active button {
   background-color: #666666;
+}
+
+/* Statistics section */
+.statistics {
+  background-color: #3498db;
+}
+.statistics .statistics__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+.statistics .statistics__container .statistics__block {
+  width: 286px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.statistics .statistics__container .statistics__block img {
+  width: 80px;
+  height: 65px;
+}
+.statistics .statistics__container .statistics__block h3 {
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: 100;
+}
+.statistics .statistics__container .statistics__block p {
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+@media (max-width: 600px) {
+  .statistics .statistics__container {
+    flex-wrap: wrap;
+  }
+  .statistics .statistics__container .statistics__block {
+    flex: 0 1 50%;
+    margin: 10px 0;
+  }
+  .statistics .statistics__container .statistics__block h3 {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  .statistics .statistics__container .statistics__block p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
