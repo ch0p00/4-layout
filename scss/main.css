@@ -332,27 +332,27 @@ main * {
   background-color: #666666; }
 
 /* Statistics section */
-.statistics {
+.statistics, .cta {
   background-color: #3498db; }
-  .statistics .statistics__container {
+  .statistics .statistics__container, .statistics .cta__container, .cta .statistics__container, .cta .cta__container {
     display: flex;
     justify-content: space-around;
     padding: 70px 0; }
-    .statistics .statistics__container .statistics__block {
+    .statistics .statistics__container .statistics__block, .statistics .statistics__container .cta__block, .statistics .cta__container .statistics__block, .statistics .cta__container .cta__block, .cta .statistics__container .statistics__block, .cta .statistics__container .cta__block, .cta .cta__container .statistics__block, .cta .cta__container .cta__block {
       width: 286px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       color: #ffffff; }
-      .statistics .statistics__container .statistics__block img {
+      .statistics .statistics__container .statistics__block img, .statistics .statistics__container .cta__block img, .statistics .cta__container .statistics__block img, .statistics .cta__container .cta__block img, .cta .statistics__container .statistics__block img, .cta .statistics__container .cta__block img, .cta .cta__container .statistics__block img, .cta .cta__container .cta__block img {
         width: 80px;
         height: 65px; }
-      .statistics .statistics__container .statistics__block h3 {
+      .statistics .statistics__container .statistics__block h3, .statistics .statistics__container .cta__block h3, .statistics .cta__container .statistics__block h3, .statistics .cta__container .cta__block h3, .cta .statistics__container .statistics__block h3, .cta .statistics__container .cta__block h3, .cta .cta__container .statistics__block h3, .cta .cta__container .cta__block h3 {
         padding: 20px 0;
         font-size: 28px;
         font-weight: 100; }
-      .statistics .statistics__container .statistics__block p {
+      .statistics .statistics__container .statistics__block p, .statistics .statistics__container .cta__block p, .statistics .cta__container .statistics__block p, .statistics .cta__container .cta__block p, .cta .statistics__container .statistics__block p, .cta .statistics__container .cta__block p, .cta .cta__container .statistics__block p, .cta .cta__container .cta__block p {
         font-size: 15px;
         padding: 0 5px; }
 
@@ -516,5 +516,50 @@ main * {
   .mentors__container .mentors__description p {
     line-height: 18px;
     font-size: 14px; } }
+/* Map section */
+.map iframe {
+  width: 100%;
+  height: 400px; }
+
+/* CTA section */
+.cta .cta__container {
+  padding: 40px 0; }
+  .cta .cta__container .cta__block img {
+    height: 45px;
+    width: auto; }
+  .cta .cta__container .cta__block h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 0; }
+  .cta .cta__container .cta__block a {
+    color: #ffffff;
+    font-size: 14px; }
+
+@media (max-width: 730px) {
+  .cta .cta__container {
+    flex-wrap: wrap; }
+    .cta .cta__container .cta__block {
+      flex: 0 1 50%;
+      margin-bottom: 20px; }
+      .cta .cta__container .cta__block a {
+        font-size: 12px; } }
+/* Footer section*/
+footer {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  text-align: center; }
+  footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555555; }
+    footer p a {
+      color: #70a8e5; }
+
+@media (max-width: 600px) {
+  footer {
+    padding: 20px 0; }
+    footer p {
+      font-size: 12px;
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
