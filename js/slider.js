@@ -22,9 +22,12 @@ $(document).ready(function() {
     });
 
     $('.slider2').slick({
+        fade: true,
         slidesToShow: 1,
         centerMode: true,
         arrows: false,
-        dots:true
+        dots:true,
+        autoplay:true,
+        autoplaySpeed:10000
     });
 });

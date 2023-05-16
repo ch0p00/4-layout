@@ -4,6 +4,12 @@ $fontBasic: #555555;
   border-radius: 40px;
   padding: $padding;
 }
+@mixin title ($margin) {
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+  margin: $margin;
+}
 /* General Page style-rules */
 *{
   margin: 0;
@@ -338,9 +344,7 @@ main *{
   text-align: center;
   padding: 65px 0;
   h2{
-    font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 25px;
+    @include title(0 0 25px 0)
   }
 }
 .slick-track {
@@ -449,14 +453,11 @@ main *{
 }}
 /* Testimonials section */
 .testimonials h2{
-  font-weight: 200;
-  font-size: 35px;
-  text-align: center;
-  margin-top: 70px;
+  @include title(70px 0 0 0)
 }
 .testimonials__container{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding-bottom: 70px;
   text-align: center;
@@ -464,20 +465,16 @@ main *{
     width: 35px;
     height: 35px;
   }
-  #quote-open{
-    margin-bottom: 150px;
-    margin-right: 10px;
+  #quote-open {
+    align-self: flex-start;
+}
+  #quote-close {
+    align-self: flex-end;
   }
-  #quote-close{
-    margin-top: 130px;
-  }
-  .testimonials__text{
+  .testimonials__quote{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
     width: 80%;
-  }
   p{
     margin: 30px 0;
     width: 100%;
@@ -485,15 +482,18 @@ main *{
     line-height: 36px;
     color: $fontBasic;
   }
-  h5{
-    font-size: 20px;
-    font-weight: 100;
-  }
-  h6{
-    font-size: 18px;
-    font-weight: 100;
-    color: $fontBasic;
-    font-style: italic;
+}
+  .testimonials__author{
+    h5{
+      font-size: 20px;
+      font-weight: 100;
+    }
+    h6{
+      font-size: 18px;
+      font-weight: 100;
+      color: $fontBasic;
+      font-style: italic;
+    }
   }
 }
 @media (max-width: 600px) {
@@ -507,25 +507,52 @@ main *{
       width: 20px;
       height: 20px;
     }
-    p{
-      font-size: 14px;
-      line-height: 20px;
+    .testimonials__quote {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
+    .testimonials__author{
     h5{
       font-size: 16px;
     }
     h6{
       font-size: 14px;
     }
+  }}
+}
+/* Video section */
+.video{
+  background-color: #f7f7f7;
+}
+.video__container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  h2{
+    @include title(70px 0 30px 0)
+  }
+  p{
+    text-align: center;
+    color: $fontBasic;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  #video{
+    width: 1000px;
+    height: 500px;
+    iframe{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
-@media (max-width: 420px) {
-  .testimonials__container{
-  #quote-open{
-    margin-bottom: 250px;
-    margin-right: 10px;
-  }
-  #quote-close{
-    margin-top: 150px;
-  }
-}}
