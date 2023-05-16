@@ -28,7 +28,7 @@ main {
 /* Open Sans */
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+  src: url('/home/user/Desktop/l4/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 /* Header */
 header {
@@ -270,10 +270,10 @@ main *{
       padding: 10px;
       height: 50px;
     }
-    #policy {
+    .policy {
       width: 100%;
       margin-top: 10px;
-      input {
+      #policy {
         width: 13px;
         height: 13px;
       }
@@ -447,3 +447,27 @@ main *{
     }
   }
 }}
+/* Testimonials section */
+.testimonials__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+  text-align: center;
+  h2{
+    font-weight: 200;
+    font-size: 35px;
+  }
+  img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+  }
+  p{
+    margin: 30px 0;
+    width: 890px;
+    font-size: 21px;
+    line-height: 36px;
+    color: $fontBasic;
+  }
+}

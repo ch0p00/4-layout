@@ -22,7 +22,7 @@ main {
 /* Open Sans */
 @font-face {
   font-family: 'Open Sans';
-  src: url("/fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("/home/user/Desktop/l4/fonts/OpenSans-Regular.ttf") format("truetype"); }
 /* Header */
 header {
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
@@ -223,17 +223,17 @@ main * {
         box-shadow: 0 0 10px #66afe9;
         border: #66afe9 solid 1px;
         outline: none; }
-    #content-form__form form #policy {
+    #content-form__form form .policy {
       width: 100%;
       margin-top: 10px; }
-      #content-form__form form #policy input {
+      #content-form__form form .policy #policy {
         width: 13px;
         height: 13px; }
-      #content-form__form form #policy label {
+      #content-form__form form .policy label {
         width: fit-content;
         font-size: 15px;
         font-weight: 100; }
-        #content-form__form form #policy label a {
+        #content-form__form form .policy label a {
           color: #337ab7; }
     #content-form__form form button {
       width: 365px;
@@ -366,5 +366,25 @@ main * {
         font-size: 20px; }
       .statistics .statistics__container .statistics__block p {
         font-size: 12px; } }
+/* Testimonials section */
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+  text-align: center; }
+  .testimonials__container h2 {
+    font-weight: 200;
+    font-size: 35px; }
+  .testimonials__container img {
+    position: absolute;
+    width: 25px;
+    height: 25px; }
+  .testimonials__container p {
+    margin: 30px 0;
+    width: 890px;
+    font-size: 21px;
+    line-height: 36px;
+    color: #555555; }
 
 /*# sourceMappingURL=main.css.map */
