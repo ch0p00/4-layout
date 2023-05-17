@@ -9,7 +9,7 @@
 }
 
 #content-form__form, #course, #statistics, #testimonials, #video, #mentors {
-  scroll-margin-top: 80vh;
+  scroll-margin-top: 50vh;
 }
 
 /* Header and footer are always fixed */
