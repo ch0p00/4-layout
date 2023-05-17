@@ -696,12 +696,13 @@ footer {
   text-align: center;
 }
 footer p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   color: #70a8e5;
 }
 footer p a {
   color: #555555;
+  font-size: 14px;
 }
 
 @media (max-width: 600px) {
