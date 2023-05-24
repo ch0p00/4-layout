@@ -314,9 +314,13 @@ main * {
 @media (max-width: 960px) {
   #content-form__form {
     width: 80%;
+    padding-left: 10px;
   }
   #content-form__form h2 {
     font-size: 18px;
+  }
+  #content-form__form form input {
+    margin: 0;
   }
   #content-form__form form button {
     padding: 5px;
@@ -331,6 +335,7 @@ main * {
 @media screen and (max-width: 420px) {
   #form input {
     font-size: 14px;
+    margin: 0;
   }
   #content-form__form {
     padding-left: 0;
@@ -696,13 +701,12 @@ footer {
   text-align: center;
 }
 footer p {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
   color: #70a8e5;
 }
 footer p a {
   color: #555555;
-  font-size: 14px;
 }
 
 @media (max-width: 600px) {
